@@ -22,7 +22,7 @@ function PrintDeveloperbyForEach() {
   const developers = [];
   arr.forEach((employee) => {
     if (employee.profession === "developer") {
-      developers.push(employee); // Push developers to the array
+      developers.push(employee);
     }
   });
 
@@ -30,12 +30,7 @@ function PrintDeveloperbyForEach() {
 }
 
 function addData() {
-  const newEmployee = {
-    id: 4,
-    name: "james",
-    age: "21",
-    profession: "developer",
-  };
+  const newEmployee = { id: 4, name: "susan", age: "20", profession: "intern" };
   arr.push(newEmployee);
   console.log(arr);
 }
@@ -47,17 +42,11 @@ function removeAdmin() {
 
 function concatenateArray() {
   const newArray = [
-    { id: 4, name: "alex", age: "22", profession: "developer" },
-    { id: 5, name: "mahesh", age: "21", profession: "developer" },
-    { id: 6, name: "kishore", age: "24", profession: "admin" },
+    { id: 4, name: "alice", age: "22", profession: "developer" },
+    { id: 5, name: "bob", age: "25", profession: "developer" },
+    { id: 6, name: "charlie", age: "23", profession: "admin" },
   ];
 
   const concatenatedArray = arr.concat(newArray);
   console.log(concatenatedArray);
 }
-
-PrintDeveloperbyMap();
-PrintDeveloperbyForEach();
-addData();
-removeAdmin();
-concatenateArray();
